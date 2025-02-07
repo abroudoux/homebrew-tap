@@ -5,11 +5,11 @@
 class Dk < Formula
   desc ""
   homepage "https://github.com/abroudoux/dk"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
-    url "https://github.com/abroudoux/dk/releases/download/v0.2.0/dk_0.2.0_darwin_all.tar.gz"
-    sha256 "c0d1bf854663de11a8d82a7477866cebff981fad734947324ab4efacc54195b2"
+    url "https://github.com/abroudoux/dk/releases/download/v0.2.1/dk_0.2.1_darwin_all.tar.gz"
+    sha256 "212cde3591eacf92c705672dc52438c8ed2e691a42bfeac2260a0a4a3853ed52"
 
     def install
       bin.install "dk"
@@ -19,8 +19,8 @@ class Dk < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abroudoux/dk/releases/download/v0.2.0/dk_0.2.0_linux_amd64.tar.gz"
-        sha256 "881788cf11b5355724725a16863b55bbd50f5aa7ea304f50a78b6c3321882ac4"
+        url "https://github.com/abroudoux/dk/releases/download/v0.2.1/dk_0.2.1_linux_amd64.tar.gz"
+        sha256 "fdc3cb7953684770024e3b73909f8a4d5c65383b2945644c6a408af535d0f301"
 
         def install
           bin.install "dk"
@@ -29,8 +29,8 @@ class Dk < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abroudoux/dk/releases/download/v0.2.0/dk_0.2.0_linux_arm64.tar.gz"
-        sha256 "56a06b20b08fc8a41c56be19c557c367edbad7fa0a99dd1bcc40bb613745e5a0"
+        url "https://github.com/abroudoux/dk/releases/download/v0.2.1/dk_0.2.1_linux_arm64.tar.gz"
+        sha256 "511d314968c8737fd9165f65f6b5d27e79c160b73d58330e879a2251a38ad7ca"
 
         def install
           bin.install "dk"
