@@ -5,11 +5,11 @@
 class Branch < Formula
   desc ""
   homepage "https://github.com/abroudoux/branch"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
-    url "https://github.com/abroudoux/branch/releases/download/v0.2.2/branch_0.2.2_darwin_all.tar.gz"
-    sha256 "d4ff83b8c87c5abbc56b0c48cf4a669e2d5396076ff428c9c1ddd89a27458089"
+    url "https://github.com/abroudoux/branch/releases/download/v0.2.3/branch_0.2.3_darwin_all.tar.gz"
+    sha256 "7030a65d813a5b77e3548fb2908369fa1609f4068b1b20a727332c93174eafa9"
 
     def install
       bin.install "branch"
@@ -19,8 +19,8 @@ class Branch < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abroudoux/branch/releases/download/v0.2.2/branch_0.2.2_linux_amd64.tar.gz"
-        sha256 "b9156eb75ab61722806c0dbf80247e75c507a177ae776daa20896140c2420d69"
+        url "https://github.com/abroudoux/branch/releases/download/v0.2.3/branch_0.2.3_linux_amd64.tar.gz"
+        sha256 "f4f4bc155c48c3a944a46c0f914ca1ad264e8e75c4e2797a82a009a25351138b"
 
         def install
           bin.install "branch"
@@ -29,8 +29,8 @@ class Branch < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/abroudoux/branch/releases/download/v0.2.2/branch_0.2.2_linux_arm64.tar.gz"
-        sha256 "7ac962ebc6b2fccb0956d46c4e5b6c51a786fe10f40b19e08768b619d35e41fe"
+        url "https://github.com/abroudoux/branch/releases/download/v0.2.3/branch_0.2.3_linux_arm64.tar.gz"
+        sha256 "e138ee056d7887bb5e1b87b659eefffa8cdb258f652cfb07ab466048e75d9dc8"
 
         def install
           bin.install "branch"
